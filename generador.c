@@ -45,7 +45,7 @@ void gen_file_jugador(char const *filename, int idx)
 	if(file == NULL)
 		return;
 	
-	char const *nombre_jugador = player_names[idx];
+	char const *nombre_jugador = player_names[idx % player_names_length];
 	char const *nombre_foto = nombre_jugador;
 	float dinero = get_random_float(100, 1000);
 	int victorias = get_random_int(0, 20);
@@ -83,8 +83,9 @@ void gen_file_partido(char const *filename, int idx, int maxidx)
 	char const *estadio = GET_RANDOM_OID(oids_estadios, oids_estadios_length);
 	int duracion = get_random_int(40, 180); /* duración en minutos */
 	oid arbitro = GET_RANDOM_OID(oids_arbitros, oids_arbitros_length);
-	oid comentarista_1 = oids_comentaristas[get_random_int(1, oids_comentaristas_length - 1)];
-	oid comentarista_2 = comentarista_1 - 1;
+	int comentarista_1_idx = get_random_int(1, oids_comentaristas_length - 1);
+	oid comentarista_1 = oids_comentaristas[comentarista_1_idx];
+	oid comentarista_2 = oids_comentaristas[comentarista_1_idx - 1];
 	int jugador_1 = get_random_int(0, maxidx);
 	int jugador_2 = idx;
 	if (jugador_1 == jugador_2)
