@@ -4,7 +4,7 @@
 #include "format_string.h"
 
 static char const * const format_string_jugador =
-"["                                                                        FORMAT_STRING_NEWLINE
+""                                                                         FORMAT_STRING_NEWLINE
 "{"                                                                        FORMAT_STRING_NEWLINE
 "    \"_id\": %d,"                                                         FORMAT_STRING_NEWLINE
 "    \"nombre\": \"%s\","                                                  FORMAT_STRING_NEWLINE
@@ -36,7 +36,7 @@ static char const * const format_string_jugador =
 "        }"                                                                FORMAT_STRING_NEWLINE
 "    }"                                                                    FORMAT_STRING_NEWLINE
 "}"                                                                        FORMAT_STRING_NEWLINE
-"]"                                                                        FORMAT_STRING_NEWLINE
+""                                                                         FORMAT_STRING_NEWLINE
 ""                                                                         FORMAT_STRING_NEWLINE
 ;
 

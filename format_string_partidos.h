@@ -4,7 +4,7 @@
 #include "format_string.h"
 
 static char const * const format_string_partidos =
-"["                                                                       FORMAT_STRING_NEWLINE
+""                                                                        FORMAT_STRING_NEWLINE
 "{"                                                                       FORMAT_STRING_NEWLINE
 "    \"estadio\": {%s}," /* (ENTRE 0 Y 19) */                             FORMAT_STRING_NEWLINE
 "    \"duracion\": %d," /* (EN MINUTOS) */                                FORMAT_STRING_NEWLINE
@@ -24,7 +24,7 @@ static char const * const format_string_partidos =
 "        \"goles_jugador_2\": %d"                                         FORMAT_STRING_NEWLINE
 "    }"                                                                   FORMAT_STRING_NEWLINE
 "}"                                                                       FORMAT_STRING_NEWLINE
-"]"                                                                       FORMAT_STRING_NEWLINE
+""                                                                        FORMAT_STRING_NEWLINE
 ""                                                                        FORMAT_STRING_NEWLINE
 ;
 
