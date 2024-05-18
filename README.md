@@ -9,4 +9,9 @@ To use this, you simply need to compile the program "generador.c"
 
 # Usage
 To use this program, you simply need to run it from the command line and specify the amount of JSON files you want to generate.
-``./generator 100`` will generate 100 JSON files within the folders ``./jugadores`` and ``./partidos``.
+
+There is also a flag to specify whether you want to store each generated entry within its own individual file, or if you want to store all entries within the same file. This option is added for ease of importing within other software, making it easier to batch import data. The flag takes the values 0 (1 file for each entry) and 1 (all entries within the same file).
+
+
+Example command to generate 100 entries and store them each within their own JSON file:
+``./generator 100 0`` will generate 100 JSON files within the folders ``./jugadores`` and ``./partidos``. These folders are relative to the path from which you execute the program.
