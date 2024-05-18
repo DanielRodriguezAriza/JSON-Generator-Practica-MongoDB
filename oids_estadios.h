@@ -1,3 +1,6 @@
+#ifndef OIDS_ESTADIOS_H
+#define OIDS_ESTADIOS_H
+
 static char const * const oids_estadios[] =
 {
 	"\"$oid\": \"66392d96eb4cbf248ecc38bf\"",
@@ -23,3 +26,5 @@ static char const * const oids_estadios[] =
 };
 
 #define oids_estadios_length GET_STATIC_ARRAY_LENGTH(oids_estadios)
+
+#endif

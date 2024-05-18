@@ -1,3 +1,6 @@
+#ifndef PLAYER_NAMES_H
+#define PLAYER_NAMES_H
+
 static char const * player_names[] =
 {
     "Alejandro", "Beatriz", "Carlos", "Diana", "Eduardo", "Fernanda", "Gabriel", "Hilda",
@@ -15,3 +18,5 @@ static char const * player_names[] =
 };
 
 #define player_names_length (sizeof(player_names)/sizeof(player_names[0]))
+
+#endif

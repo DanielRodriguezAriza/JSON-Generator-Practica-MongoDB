@@ -1,3 +1,6 @@
+#ifndef OIDS_ENTRENADORES_H
+#define OIDS_ENTRENADORES_H
+
 static char const * const oids_entrenadores[] =
 {
 	"\"$oid\": \"66394b64eb4cbf248ecc3931\"",
@@ -17,3 +20,5 @@ static char const * const oids_entrenadores[] =
 };
 
 #define oids_entrenadores_length GET_STATIC_ARRAY_LENGTH(oids_entrenadores)
+
+#endif

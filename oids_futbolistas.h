@@ -1,3 +1,6 @@
+#ifndef OIDS_FUTBOLISTAS_H
+#define OIDS_FUTBOLISTAS_H
+
 static char const * const oids_futbolistas[] =
 {
 	"\"$oid\": \"663943caeb4cbf248ecc38f2\"",
@@ -25,3 +28,5 @@ static char const * const oids_futbolistas[] =
 };
 
 #define oids_futbolistas_length GET_STATIC_ARRAY_LENGTH(oids_futbolistas)
+
+#endif

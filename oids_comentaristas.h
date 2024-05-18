@@ -1,3 +1,6 @@
+#ifndef OIDS_COMENTARISTAS_H
+#define OIDS_COMENTARISTAS_H
+
 static char const * const oids_comentaristas[] =
 {
 	"\"$oid\": \"66393b40eb4cbf248ecc38de\"",
@@ -7,3 +10,5 @@ static char const * const oids_comentaristas[] =
 };
 
 #define oids_comentaristas_length GET_STATIC_ARRAY_LENGTH(oids_comentaristas)
+
+#endif
