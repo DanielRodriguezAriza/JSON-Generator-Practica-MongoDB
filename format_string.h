@@ -3,4 +3,10 @@
 
 #define FORMAT_STRING_NEWLINE "\r\n"
 
+#define RAW_STRING(...) #__VA_ARGS__
+#define RAW_STRING_LINE(...) #__VA_ARGS__ FORMAT_STRING_NEWLINE
+
+#define RS RAW_STRING
+#define RSLN RAW_STRING_LINE
+
 #endif
